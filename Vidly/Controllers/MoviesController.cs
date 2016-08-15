@@ -10,7 +10,27 @@ namespace Vidly.Controllers
 {
     public class MoviesController : Controller
     {
+        [Route("Movies/Index")]
+        public ActionResult Index()
+        {
+            var movies = getMovies();
+            return View(movies);
+        }
+
+
+        [Route("Movies/Details/{id}")]
+        public ActionResult Details(int id)
+        {
+            Movie movie = getMovies().SingleOrDefault(c => c.id == id);
+
+            if (movie == null)
+                return HttpNotFound();
+
+            return View(movie);
+        }
+
         // GET: Movies/Random
+        [Route("Movies/Random")]
         public ActionResult Random()
         {
             Movie movie = new Movie() { name = "Shrek" };
@@ -29,12 +49,18 @@ namespace Vidly.Controllers
             return View(viewModel);
         }
 
-        [Route("movies/released/{year}/{month:regex(\\d{2}):range(1, 12)}")]
-        public ActionResult ByReleaseDate(int year, int month)
-        {
-            return Content(year +"/"+ month);
-        }
 
+
+
+
+        private List<Movie> getMovies()
+        {
+            return new List<Movie>
+            {
+                new Movie { id = 1, name = "300 Spartans" },
+                new Movie {id = 2, name = "The Raid" }
+            };
+        }
 
     }
 }

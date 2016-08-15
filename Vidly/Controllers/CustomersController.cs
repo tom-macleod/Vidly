@@ -10,6 +10,7 @@ namespace Vidly.Controllers
     public class CustomersController : Controller
     {
         // GET: Customers
+        [Route("Customers/Index")]
         public ActionResult Index()
         {
 
@@ -18,9 +19,15 @@ namespace Vidly.Controllers
             return View(customers);
         }
 
+        [Route("Customers/Details/{id}")]
         public ActionResult Details(int id)
         {
-            return View(id);
+            Customer customer = getCustomers().SingleOrDefault(c => c.id == id);
+
+            if (customer == null)
+                return HttpNotFound();
+
+            return View(customer);
         }
 
 

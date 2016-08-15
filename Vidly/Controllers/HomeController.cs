@@ -10,18 +10,14 @@ namespace Vidly.Controllers
 {
     public class HomeController : Controller
     {
+        [Route("Home/Index")]
         public ActionResult Index()
         {
             return View();
         }
 
 
-        public ActionResult Movies()
-        {
-            ViewBag.Message = "Movie Page";
-
-            return View();
-        }
+        
 
 
 
