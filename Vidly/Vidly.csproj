@@ -235,6 +235,14 @@
     <Compile Include="Migrations\201610111923398_UpdateYearlyToAnnual.Designer.cs">
       <DependentUpon>201610111923398_UpdateYearlyToAnnual.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201610111958122_AddedBirthdateToCustomer.cs" />
+    <Compile Include="Migrations\201610111958122_AddedBirthdateToCustomer.Designer.cs">
+      <DependentUpon>201610111958122_AddedBirthdateToCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201610112052008_MadeBirthdateNullable.cs" />
+    <Compile Include="Migrations\201610112052008_MadeBirthdateNullable.Designer.cs">
+      <DependentUpon>201610112052008_MadeBirthdateNullable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -346,6 +354,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201610111923398_UpdateYearlyToAnnual.resx">
       <DependentUpon>201610111923398_UpdateYearlyToAnnual.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201610111958122_AddedBirthdateToCustomer.resx">
+      <DependentUpon>201610111958122_AddedBirthdateToCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201610112052008_MadeBirthdateNullable.resx">
+      <DependentUpon>201610112052008_MadeBirthdateNullable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

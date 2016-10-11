@@ -7,3 +7,11 @@
 
 <h2>@Model.name</h2>
 
+<ul>
+    <li>Membership Type: @Model.membershipType.membershipName</li>
+    @if (Model.birthdate != null)
+    {
+        <li>Birthdate: @Model.birthdate.Value.ToShortDateString()</li>
+    }
+</ul>
+
