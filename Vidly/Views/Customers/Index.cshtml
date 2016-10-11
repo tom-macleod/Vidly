@@ -17,12 +17,14 @@ else
     <table class="table table-striped">
         <tr>
              <th>Customers</th>
+            <th>Discount Rate</th>
         </tr>
 
          @foreach (var customer in Model)
          {
         <tr>
-            <td><a href="@Url.Action("Details","Customers", new {id = customer.id })">@customer.name</a></td>
+            <td>@Html.ActionLink(customer.name, "Details", "Customers", new { id = customer.id }, null)</td>
+            <td>@customer.membershipType.discountRate%</td>
         </tr>
          }
     </table>

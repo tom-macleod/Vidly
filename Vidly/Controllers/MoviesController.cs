@@ -50,9 +50,6 @@ namespace Vidly.Controllers
         }
 
 
-
-
-
         private List<Movie> getMovies()
         {
             return new List<Movie>

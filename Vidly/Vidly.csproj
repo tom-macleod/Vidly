@@ -207,11 +207,28 @@
     <Compile Include="Migrations\201608172020340_InitialModel.Designer.cs">
       <DependentUpon>201608172020340_InitialModel.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201610111738000_AddIsSubscribedToCustomer.cs" />
+    <Compile Include="Migrations\201610111738000_AddIsSubscribedToCustomer.Designer.cs">
+      <DependentUpon>201610111738000_AddIsSubscribedToCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201610111741413_AddMembershipType.cs" />
+    <Compile Include="Migrations\201610111741413_AddMembershipType.Designer.cs">
+      <DependentUpon>201610111741413_AddMembershipType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201610111745078_populateMembershipTypes.cs" />
+    <Compile Include="Migrations\201610111745078_populateMembershipTypes.Designer.cs">
+      <DependentUpon>201610111745078_populateMembershipTypes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201610111755194_ApplyAnnotationsToCustomerName.cs" />
+    <Compile Include="Migrations\201610111755194_ApplyAnnotationsToCustomerName.Designer.cs">
+      <DependentUpon>201610111755194_ApplyAnnotationsToCustomerName.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\MembershipType.cs" />
     <Compile Include="Models\Movie.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
@@ -230,9 +247,6 @@
     <Content Include="Scripts\ai.0.22.9-build00167.min.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
-    <Content Include="ApplicationInsights.config">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -300,6 +314,21 @@
     <EmbeddedResource Include="Migrations\201608172020340_InitialModel.resx">
       <DependentUpon>201608172020340_InitialModel.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201610111738000_AddIsSubscribedToCustomer.resx">
+      <DependentUpon>201610111738000_AddIsSubscribedToCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201610111741413_AddMembershipType.resx">
+      <DependentUpon>201610111741413_AddMembershipType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201610111745078_populateMembershipTypes.resx">
+      <DependentUpon>201610111745078_populateMembershipTypes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201610111755194_ApplyAnnotationsToCustomerName.resx">
+      <DependentUpon>201610111755194_ApplyAnnotationsToCustomerName.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -17,6 +17,15 @@ namespace Vidly.Migrations
                 .PrimaryKey(t => t.id);
             
             CreateTable(
+                "dbo.Movies",
+                c => new
+                    {
+                        id = c.Int(nullable: false, identity: true),
+                        name = c.String(),
+                    })
+                .PrimaryKey(t => t.id);
+            
+            CreateTable(
                 "dbo.AspNetRoles",
                 c => new
                     {
@@ -103,6 +112,7 @@ namespace Vidly.Migrations
             DropTable("dbo.AspNetUsers");
             DropTable("dbo.AspNetUserRoles");
             DropTable("dbo.AspNetRoles");
+            DropTable("dbo.Movies");
             DropTable("dbo.Customers");
         }
     }
