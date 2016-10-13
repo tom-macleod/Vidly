@@ -263,6 +263,10 @@
     <Compile Include="Migrations\201610131453171_AddTimeStampsToMovieDates.Designer.cs">
       <DependentUpon>201610131453171_AddTimeStampsToMovieDates.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201610131953552_DatabaseUpdate.cs" />
+    <Compile Include="Migrations\201610131953552_DatabaseUpdate.Designer.cs">
+      <DependentUpon>201610131953552_DatabaseUpdate.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -400,6 +404,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201610131453171_AddTimeStampsToMovieDates.resx">
       <DependentUpon>201610131453171_AddTimeStampsToMovieDates.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201610131953552_DatabaseUpdate.resx">
+      <DependentUpon>201610131953552_DatabaseUpdate.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
