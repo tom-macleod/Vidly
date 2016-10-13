@@ -10,7 +10,6 @@ namespace Vidly.Controllers
 {
     public class MoviesController : Controller
     {
-        [Route("Movies/Index")]
         public ActionResult Index()
         {
             var movies = getMovies();
@@ -18,7 +17,6 @@ namespace Vidly.Controllers
         }
 
 
-        [Route("Movies/Details/{id}")]
         public ActionResult Details(int id)
         {
             Movie movie = getMovies().SingleOrDefault(c => c.id == id);
