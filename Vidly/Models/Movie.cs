@@ -13,9 +13,9 @@ namespace Vidly.Models
         public string name { get; set; }
         public DateTime releaseDate { get; set; }
         public DateTime dateAdded { get; set; }
-        [Required]
         [ForeignKey("genreId")]
         public virtual Genre genre { get; set; }
+        [Required]
         public int genreId { get; set; }
         public byte numberInStock { get; set; }
     }
