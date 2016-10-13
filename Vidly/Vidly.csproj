@@ -243,6 +243,26 @@
     <Compile Include="Migrations\201610112052008_MadeBirthdateNullable.Designer.cs">
       <DependentUpon>201610112052008_MadeBirthdateNullable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201610131348205_CreateGenreTable.cs" />
+    <Compile Include="Migrations\201610131348205_CreateGenreTable.Designer.cs">
+      <DependentUpon>201610131348205_CreateGenreTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201610131351315_PopulateGenresTable.cs" />
+    <Compile Include="Migrations\201610131351315_PopulateGenresTable.Designer.cs">
+      <DependentUpon>201610131351315_PopulateGenresTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201610131404083_PopulateMoviesTable.cs" />
+    <Compile Include="Migrations\201610131404083_PopulateMoviesTable.Designer.cs">
+      <DependentUpon>201610131404083_PopulateMoviesTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201610131442251_PopulateDateColumnsInMoviesTable.cs" />
+    <Compile Include="Migrations\201610131442251_PopulateDateColumnsInMoviesTable.Designer.cs">
+      <DependentUpon>201610131442251_PopulateDateColumnsInMoviesTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201610131453171_AddTimeStampsToMovieDates.cs" />
+    <Compile Include="Migrations\201610131453171_AddTimeStampsToMovieDates.Designer.cs">
+      <DependentUpon>201610131453171_AddTimeStampsToMovieDates.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -361,6 +381,21 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201610112052008_MadeBirthdateNullable.resx">
       <DependentUpon>201610112052008_MadeBirthdateNullable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201610131348205_CreateGenreTable.resx">
+      <DependentUpon>201610131348205_CreateGenreTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201610131351315_PopulateGenresTable.resx">
+      <DependentUpon>201610131351315_PopulateGenresTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201610131404083_PopulateMoviesTable.resx">
+      <DependentUpon>201610131404083_PopulateMoviesTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201610131442251_PopulateDateColumnsInMoviesTable.resx">
+      <DependentUpon>201610131442251_PopulateDateColumnsInMoviesTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201610131453171_AddTimeStampsToMovieDates.resx">
+      <DependentUpon>201610131453171_AddTimeStampsToMovieDates.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
