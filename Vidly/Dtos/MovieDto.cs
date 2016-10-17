@@ -7,21 +7,26 @@ using Vidly.Models;
 
 namespace Vidly.Dtos
 {
-    public class CustomerDto
+    public class MovieDto
     {
+
         public int id { get; set; }
 
         [Required]
         [StringLength(255)]
         public string name { get; set; }
 
-        //[Min18YearsIfAMember]
-        public DateTime? birthdate { get; set; }
+        [Required]
+        public DateTime releaseDate { get; set; }
 
-        public bool isSubscribedToNewsLetter { get; set; }
+        public DateTime dateAdded { get; set; }
 
-        public byte membershipTypeId { get; set; }
+        [Required]
+        public int genreId { get; set; }
 
+        [Range(1, 20)]
+        [Required]
+        public byte numberInStock { get; set; }
 
     }
 }
